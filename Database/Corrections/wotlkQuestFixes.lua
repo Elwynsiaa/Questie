@@ -43,6 +43,20 @@ function QuestieWotlkQuestFixes:Load()
     local specKeys = QuestieProfessions.specializationKeys
 
     return {
+        [24590] = { -- Alliance: Securing the Ramparts
+        [QuestieDB.questKeys.name] = "Securing the Ramparts",
+        [QuestieDB.questKeys.startedBy] = {{38492}}, 
+        [QuestieDB.questKeys.finishedBy] = {{38492}},
+        [QuestieDB.questKeys.requiredLevel] = 80,
+        [QuestieDB.questKeys.questLevel] = 80,
+        },
+        [24592] = { -- Horde: Securing the Ramparts
+        [QuestieDB.questKeys.name] = "Securing the Ramparts",
+        [QuestieDB.questKeys.startedBy] = {{38502}}, 
+        [QuestieDB.questKeys.finishedBy] = {{38502}},
+        [QuestieDB.questKeys.requiredLevel] = 80,
+        [QuestieDB.questKeys.questLevel] = 80,
+        },
         [55] = {
             [questKeys.objectives] = {{{1200}}},
         },
