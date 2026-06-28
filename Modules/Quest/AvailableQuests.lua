@@ -60,16 +60,20 @@ function AvailableQuests.DrawAvailableQuest(quest) -- prevent recursion
         local gameObjects = quest.Starts["GameObject"]
         for i = 1, #gameObjects do
             local obj = QuestieDB:GetObject(gameObjects[i])
-
-            _AddStarter(obj, quest, "o_" .. obj.id)
+            
+            if obj then
+                _AddStarter(obj, quest, "o_" .. obj.id)
+            end
         end
     end
     if (quest.Starts["NPC"]) then
         local npcs = quest.Starts["NPC"]
         for i = 1, #npcs do
             local npc = QuestieDB:GetNPC(npcs[i])
-
-            _AddStarter(npc, quest, "m_" .. npc.id)
+            
+            if npc then
+                _AddStarter(npc, quest, "m_" .. npc.id)
+            end
         end
     end
 end
