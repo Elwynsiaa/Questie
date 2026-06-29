@@ -57,12 +57,6 @@ function QuestieWotlkQuestFixes:Load()
         [QuestieDB.questKeys.requiredLevel] = 80,
         [QuestieDB.questKeys.questLevel] = 80,
         },
-        [11786] = { -- Alliance: Desecrate this Fire! (Tirisfal Glades)
-        [QuestieDB.questKeys.name] = "Desecrate this Fire!",
-        -- Index 1 is for NPCs (nil), Index 2 is for GameObjects (187974)
-        [QuestieDB.questKeys.startedBy] = {nil, {187974}}, 
-        [QuestieDB.questKeys.finishedBy] = {nil, {187974}},
-        },
         [55] = {
             [questKeys.objectives] = {{{1200}}},
         },

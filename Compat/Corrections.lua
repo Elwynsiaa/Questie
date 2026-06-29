@@ -10,7 +10,22 @@ QuestieCompat.RegisterCorrection("questData", function()
         [12372] = {
             [questKeys.objectivesText] = {"Afrasastrasz at Wyrmrest Temple has asked you to slay 3 Azure Dragons, slay 5 Azure Drakes, and to destabilize the Azure Dragonshrine while riding a Wyrmrest Defender into battle."},
         },
-        --[[[12435] = {
+        [11580] = { -- Alliance: Desecrate this Fire! (Silverpine / Tirisfal fallback)
+            [questKeys.name] = "Desecrate this Fire!",
+            [questKeys.startedBy] = {nil, {187559, 187974}},
+            [questKeys.finishedBy] = {nil, {187559, 187974}},
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 80,
+        },
+        [11786] = { -- Alliance: Desecrate this Fire! (Tirisfal / Silverpine fallback)
+            [questKeys.name] = "Desecrate this Fire!",
+            [questKeys.startedBy] = {nil, {187559, 187974}},
+            [questKeys.finishedBy] = {nil, {187559, 187974}},
+            [questKeys.requiredLevel] = 1,
+            [questKeys.questLevel] = 80,
+        },
+        --[[
+        [12435] = {
             [questKeys.name] = "Report to Lord Afrasastrasz",
             [questKeys.objectivesText] = {"Speak with Lord Afrasastrasz at Wyrmrest Temple."},
         },
@@ -19,7 +34,8 @@ QuestieCompat.RegisterCorrection("questData", function()
         },
 		[24541] = { -- [WARNING] Nonmatching table at objectives  28 for ID: 24541
 			[questKeys.objectives] = {nil,nil,nil,nil,nil,{{71539}}},
-        },]]
+        },
+        ]]
 	}
 end)
 
