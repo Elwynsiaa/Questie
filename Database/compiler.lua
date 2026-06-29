@@ -1087,10 +1087,6 @@ function QuestieDBCompiler:ValidateNPCs()
             elseif type(a) == "table" then
                 if not equals(a, (b or {})) then
                     Questie:Warning("Nonmatching table at " .. key .. "  " .. id .. " for ID: ".. npcId)
-                    DevTools_Dump({
-                        ["Compiled Table:"] = a,
-                        ["Base Table:"] = b
-                    })
                     return
                 end
             end
@@ -1135,10 +1131,6 @@ function QuestieDBCompiler:ValidateObjects()
             elseif type(a) == "table" then
                 if not equals(a, (b or {})) then
                     Questie:Warning("Nonmatching table at " .. key .. "  " .. id  .. " for ID: ".. objectId)
-                    DevTools_Dump({
-                        ["Compiled Table:"] = a,
-                        ["Base Table:"] = b
-                    })
                     return
                 end
             end
@@ -1252,10 +1244,6 @@ function QuestieDBCompiler:ValidateItems()
             elseif type(a) == "table" then
                 if not equals(a, (b or {})) then
                     Questie:Warning("Nonmatching table at " .. key .. "  " .. id  .. " for ID: ".. itemId)
-                    DevTools_Dump({
-                        ["Compiled Table:"] = a,
-                        ["Base Table:"] = b
-                    })
                     return
                 end
             end
@@ -1349,10 +1337,6 @@ function QuestieDBCompiler:ValidateQuests()
 
                 if not equals(a, (b or {})) then
                     Questie:Warning("Nonmatching table at " .. key .. "  " .. id .. " for ID: ".. questId)
-                    DevTools_Dump({
-                        ["Compiled Table:"] = a,
-                        ["Base Table:"] = b
-                    })
                     return
                 end
             end
