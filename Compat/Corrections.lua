@@ -10,16 +10,16 @@ QuestieCompat.RegisterCorrection("questData", function()
         [12372] = {
             [questKeys.objectivesText] = {"Afrasastrasz at Wyrmrest Temple has asked you to slay 3 Azure Dragons, slay 5 Azure Drakes, and to destabilize the Azure Dragonshrine while riding a Wyrmrest Defender into battle."},
         },
-        [12435] = {
+        --[[[12435] = {
             [questKeys.name] = "Report to Lord Afrasastrasz",
             [questKeys.objectivesText] = {"Speak with Lord Afrasastrasz at Wyrmrest Temple."},
         },
-		[24656] = {
+		[24656] = { -- [WARNING] Nonmatching table at objectives  28 for ID: 24656
 			[questKeys.objectives] = {nil,nil,nil,nil,nil,{{71522}}},
         },
-		[24541] = {
+		[24541] = { -- [WARNING] Nonmatching table at objectives  28 for ID: 24541
 			[questKeys.objectives] = {nil,nil,nil,nil,nil,{{71539}}},
-        },
+        },]]
 	}
 end)
 
