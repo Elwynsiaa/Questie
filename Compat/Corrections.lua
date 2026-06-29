@@ -27,9 +27,12 @@ QuestieCompat.RegisterCorrection("npcData", function()
 	local npcKeys = QuestieDB.npcKeys
 
 	return {
-        [27575] = {
-            [npcKeys.name] = "Lord Afrasastrasz",
-        },
+    	[38502] = { -- Questie: [CRITICAL] [QuestieDB:GetNPC] rawdata is nil for npcID: 38502
+			[npcKeys.name] = "Nablya",
+			[npcKeys.minLevel] = 85,
+			[npcKeys.maxLevel] = 85,
+			[npcKeys.zoneID] = 491,
+		},
 	}
 end)
 
