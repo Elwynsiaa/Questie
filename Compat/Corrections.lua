@@ -111,5 +111,12 @@ QuestieCompat.RegisterBlacklist("hiddenQuests", function()
         [13405] = true, --* Call to Arms: Strand of the Ancients
         [11337] = true, --* Call to Arms: Eye of the Storm
         [11335] = true, --* Call to Arms: Arathi Basin
+
+        [11340] = true, --* Call to Arms: Alterac Valley (Horde)
+        [13407] = true, --* Call to Arms: Strand of the Ancients (Horde)
+        [14164] = true, --* Call to Arms: Isle of Conquest (Horde)
+        [11342] = true, --* Call to Arms: Warsong Gulch (Horde)
+        [11341] = true, --* Call to Arms: Eye of the Storm (Horde)
+        [11339] = true, --* Call to Arms: Arathi Basin (Horde)
     }
 end)
