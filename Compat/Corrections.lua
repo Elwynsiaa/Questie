@@ -57,6 +57,76 @@ QuestieCompat.RegisterCorrection("npcData", function()
             [npcKeys.name] = "Quest - Wintergrasp - Southern Tower Kill",
             [npcKeys.spawns] = {[4197] = {{-1, -1}}},
         },
+        
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 27838
+        -- Associated Quest: No Mercy for the Merciless
+        [27838] = { 
+            [npcKeys.name] = "Wintergrasp Air Fighter", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 27850
+        -- Associated Quest: No Mercy for the Merciless
+        [27850] = { 
+            [npcKeys.name] = "Wintergrasp Bomber", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 27881
+        -- Associated Quest: Fueling the Demolishers / No Mercy for the Merciless
+        [27881] = { 
+            [npcKeys.name] = "Wintergrasp Catapult", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 27883
+        -- Associated Quest: Fueling the Demolishers
+        [27883] = { 
+            [npcKeys.name] = "Wintergrasp Shredder", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 28094
+        -- Associated Quest: Fueling the Demolishers / No Mercy for the Merciless
+        [28094] = { 
+            [npcKeys.name] = "Wintergrasp Demolisher", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 28312
+        -- Associated Quest: Stop the Siege / No Mercy for the Merciless
+        [28312] = { 
+            [npcKeys.name] = "Wintergrasp Siege Engine (Alliance)", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 32627
+        -- Associated Quest: Stop the Siege / No Mercy for the Merciless
+        [32627] = { 
+            [npcKeys.name] = "Wintergrasp Siege Engine (Horde)", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 32898
+        -- Associated Quest: Warding the Warriors / Bones and Arrows
+        [32898] = { 
+            [npcKeys.name] = "Wintergrasp Guard Trigger", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 31093
+        -- Associated Quest: No Mercy for the Merciless
+        [31093] = { 
+            [npcKeys.name] = "Quest - Wintergrasp - PvP Kill - Vehicle", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 39019
+        -- Associated Quest: No Mercy for the Merciless
+        [39019] = { 
+            [npcKeys.name] = "Quest - Wintergrasp - PvP Kill - Horde", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
 	}
 end)
 
