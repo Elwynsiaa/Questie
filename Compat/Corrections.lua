@@ -118,5 +118,8 @@ QuestieCompat.RegisterBlacklist("hiddenQuests", function()
         [11342] = true, --* Call to Arms: Warsong Gulch (Horde)
         [11341] = true, --* Call to Arms: Eye of the Storm (Horde)
         [11339] = true, --* Call to Arms: Arathi Basin (Horde)
+
+        [11970] = true, --* The Master of Summer Lore (Alliance Midsummer Intro)
+        [11971] = true, --* The Spinner of Summer Tales (Horde Midsummer Intro)
     }
 end)
