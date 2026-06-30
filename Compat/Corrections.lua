@@ -53,6 +53,10 @@ QuestieCompat.RegisterCorrection("npcData", function()
             [npcKeys.name] = "Quest - Wintergrasp - Vehicle Protected",
             [npcKeys.spawns] = {[4197] = {{-1, -1}}},
         },
+        [35074] = { -- Questie: [CRITICAL] Spawn data missing for NPC: 35074
+            [npcKeys.name] = "Quest - Wintergrasp - Southern Tower Kill",
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}},
+        },
 	}
 end)
 
