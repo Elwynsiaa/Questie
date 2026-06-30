@@ -382,6 +382,12 @@ local function GetZoneNameByIDFallback(zoneId)
         return "Unknown Zone"
     end
 
+    -- Questie: [CRITICAL] [GetZoneNameByIDFallback]: Unable to find a zone name for zoneId 4813
+    if zoneId == 4813 then
+        zoneCache[zoneId] = "Pit of Saron"
+        return zoneCache[zoneId]
+    end
+
     for _, zone in pairs(l10n.zoneLookup) do
         if zone[zoneId] then
             zoneCache[zoneId] = zone[zoneId]
