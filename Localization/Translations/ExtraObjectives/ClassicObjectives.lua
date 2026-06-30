@@ -2,6 +2,18 @@
 local l10n = QuestieLoader:ImportModule("l10n")
 
 local classicObjectiveLocales = {
+    ["Grab the package"] = { -- Questie: [ELEVATED] ERROR: Translations for 'Grab the package' are missing completely!
+        ["enUS"] = "Grab the package",
+        ["deDE"] = "Grab the package",
+        ["esES"] = "Grab the package",
+        ["esMX"] = "Grab the package",
+        ["frFR"] = "Grab the package",
+        ["koKR"] = "Grab the package",
+        ["ptBR"] = "Grab the package",
+        ["ruRU"] = "Grab the package",
+        ["zhCN"] = "Grab the package",
+        ["zhTW"] = "Grab the package",
+    },
     ["Summon Dagun the Ravenous using an Enchanted Sea Kelp"] = { -- 735 736
         ["ptBR"] = "Evoca Dagun, o Voraz, usando uma Alga Marinha Encantada.",
         ["ruRU"] = "Призовите Дагун Ненасытный используя Зачарованные морские водоросли",
