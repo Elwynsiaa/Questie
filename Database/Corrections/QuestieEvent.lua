@@ -135,8 +135,20 @@ function QuestieEvent:Load()
         if activeEvents[eventName] == true and _WithinDates(startDay, startMonth, endDay, endMonth) then
 
             if ((not questData[5]) or (Questie.IsClassic and questData[5] == QuestieCorrections.CLASSIC_ONLY)) then
-                QuestieCorrections.hiddenQuests[questId] = nil
-                QuestieEvent.activeQuests[questId] = true
+                local isBlacklisted = false
+                if QuestieCompat and QuestieCompat.blacklistRegistry and QuestieCompat.blacklistRegistry["hiddenQuests"] then
+                    for _, getBlacklist in ipairs(QuestieCompat.blacklistRegistry["hiddenQuests"]) do
+                        if getBlacklist()[questId] then
+                            isBlacklisted = true
+                            break
+                        end
+                    end
+                end
+
+                if not isBlacklisted then
+                    QuestieCorrections.hiddenQuests[questId] = nil
+                    QuestieEvent.activeQuests[questId] = true
+                end
             end
         end
     end

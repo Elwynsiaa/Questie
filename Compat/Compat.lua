@@ -1490,7 +1490,7 @@ QuestieCompat.PLAYER_LOGIN = QuestieCompat.ToggleQuestTrackingTooltips
 function QuestieCompat:PLAYER_LOGOUT(event)
 	if not QuestieCompat.isReloadingUi then
 		QuestieCompat:ToggleQuestTrackingTooltips(event)
-		
+
 		Questie.db.profile.isInitialLogin = true
 	end
 end
@@ -1552,7 +1552,7 @@ function QuestieCompat.QuestieOptions_Initialize()
         order = 6,
         name = "3.3.5 Compatibility Settings",
     }
-	
+
 	optionsTable.args.advanced_tab.args.initDelay = {
         type = "range",
         order = 6.1,
@@ -1582,7 +1582,7 @@ function QuestieCompat.QuestieOptions_Initialize()
             StaticPopup_Show("QUESTIE_RELOAD")
         end,
     }
-	
+
 	optionsTable.args.advanced_tab.args.useQuestieLinks = {
         type = "toggle",
         order = 6.3,
@@ -1644,16 +1644,16 @@ function QuestieCompat.LoadCorrections(_LoadCorrections, validationTables)
     end
 end
 
-local blacklistRegistry = {}
+QuestieCompat.blacklistRegistry = {}
 
 function QuestieCompat.RegisterBlacklist(blName, blacklist)
-    blacklistRegistry[blName] = blacklistRegistry[blName] or {}
-    table.insert(blacklistRegistry[blName], blacklist)
+    QuestieCompat.blacklistRegistry[blName] = QuestieCompat.blacklistRegistry[blName] or {}
+    table.insert(QuestieCompat.blacklistRegistry[blName], blacklist)
 end
 
 function QuestieCompat.LoadBlacklists()
-    for blName in pairs(blacklistRegistry) do
-        for _, blacklist in ipairs(blacklistRegistry[blName]) do
+    for blName in pairs(QuestieCompat.blacklistRegistry) do
+        for _, blacklist in ipairs(QuestieCompat.blacklistRegistry[blName]) do
             QuestieCompat.Merge(QuestieCorrections[blName], blacklist(), true)
         end
     end
@@ -1704,14 +1704,14 @@ function QuestieCompat:ADDON_LOADED(event, addon)
     for name, path in pairs(townsfolk_texturemap) do
         QuestieMenu.private.townsfolk_texturemap[name] = path
     end
-	
+
 	local DISABLED_MODULES = {
         "HBDHooks",
         "QuestieDebugOffer",
         "SeasonOfDiscovery",
         "QuestieDBMIntegration"
     }
-	
+
 	if not Questie.db.profile.useQuestieLinks then
 		table.insert(DISABLED_MODULES, "ChatFilter")
 		table.insert(DISABLED_MODULES, "Hooks")
