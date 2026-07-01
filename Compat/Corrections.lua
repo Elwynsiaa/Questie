@@ -127,6 +127,13 @@ QuestieCompat.RegisterCorrection("npcData", function()
             [npcKeys.name] = "Quest - Wintergrasp - PvP Kill - Horde", 
             [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
         },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 24804
+        -- Associated Quest: The Way to His Heart...
+        [24804] = {
+            [npcKeys.name] = "Attracted Reef Bull",
+            [npcKeys.spawns] = {[495] = {{-1, -1}}}, -- Instanced fallback in Howling Fjord (495)
+        },
 	}
 end)
 
