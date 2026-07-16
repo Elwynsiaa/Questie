@@ -7,8 +7,13 @@ QuestieCompat.RegisterCorrection("questData", function()
 	local questKeys = QuestieDB.questKeys
 
 	return {
-        [12372] = {
-            [questKeys.objectivesText] = {"Afrasastrasz at Wyrmrest Temple has asked you to slay 3 Azure Dragons, slay 5 Azure Drakes, and to destabilize the Azure Dragonshrine while riding a Wyrmrest Defender into battle."},
+        [24872] = { -- Respite for a Tormented Soul (10-man)
+            [questKeys.name] = "Respite for a Tormented Soul",
+            [questKeys.finishedBy] = {{38017}}, -- Kalecgos
+        },
+        [24880] = { -- Respite for a Tormented Soul (25-man)
+            [questKeys.name] = "Respite for a Tormented Soul",
+            [questKeys.finishedBy] = {{38017}}, -- Kalecgos
         },
         [11580] = { -- Alliance: Desecrate this Fire! (Silverpine / Tirisfal fallback)
             [questKeys.name] = "Desecrate this Fire!",
