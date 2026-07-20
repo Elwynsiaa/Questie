@@ -23,6 +23,12 @@ QuestieCompat.RegisterCorrection("questData", function()
             [questKeys.name] = "Residue Rendezvous",
             [questKeys.finishedBy] = {{38501}}, -- Alchemist Adrianna
         },
+        [24879] = { -- Alliance/Horde: Blood Quickening (10-man)
+            [questKeys.finishedBy] = {{38551}}, -- Alrin the Agile
+        },
+        [24881] = { -- Alliance/Horde: Blood Quickening (25-man)
+            [questKeys.finishedBy] = {{38551}}, -- Alrin the Agile
+        },
         [11580] = { -- Alliance: Desecrate this Fire! (Silverpine / Tirisfal fallback)
             [questKeys.name] = "Desecrate this Fire!",
             [questKeys.startedBy] = {nil, {187559, 187974}},
