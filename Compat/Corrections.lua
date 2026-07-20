@@ -15,6 +15,14 @@ QuestieCompat.RegisterCorrection("questData", function()
             [questKeys.name] = "Respite for a Tormented Soul",
             [questKeys.finishedBy] = {{38017}}, -- Kalecgos
         },
+        [24873] = { -- Alliance/Horde: Residue Rendezvous (10-man)
+            [questKeys.name] = "Residue Rendezvous",
+            [questKeys.finishedBy] = {{38501}}, -- Alchemist Adrianna
+        },
+        [24874] = { -- Alliance/Horde: Residue Rendezvous (25-man)
+            [questKeys.name] = "Residue Rendezvous",
+            [questKeys.finishedBy] = {{38501}}, -- Alchemist Adrianna
+        },
         [11580] = { -- Alliance: Desecrate this Fire! (Silverpine / Tirisfal fallback)
             [questKeys.name] = "Desecrate this Fire!",
             [questKeys.startedBy] = {nil, {187559, 187974}},
