@@ -17,10 +17,12 @@ QuestieCompat.RegisterCorrection("questData", function()
         },
         [24873] = { -- Alliance/Horde: Residue Rendezvous (10-man)
             [questKeys.name] = "Residue Rendezvous",
+            [questKeys.startedBy] = {{38501}}, -- Alchemist Adrianna
             [questKeys.finishedBy] = {{38501}}, -- Alchemist Adrianna
         },
         [24874] = { -- Alliance/Horde: Residue Rendezvous (25-man)
             [questKeys.name] = "Residue Rendezvous",
+            [questKeys.startedBy] = {{38501}}, -- Alchemist Adrianna
             [questKeys.finishedBy] = {{38501}}, -- Alchemist Adrianna
         },
         [24879] = { -- Alliance/Horde: Blood Quickening (10-man)
