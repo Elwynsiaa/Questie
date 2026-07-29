@@ -505,10 +505,18 @@ function QuestieCompat.CalculateNextResetTime()
     local timeUntilReset = GetQuestResetTime()
 
     Questie:Debug(Questie.DEBUG_DEVELOP, "[CalculateNextResetTime] GetQuestResetTime: ", timeUntilReset)
+    
     if timeUntilReset <= 0 then
-        Questie:Error("GetQuestResetTime() returns an invalid value: "..timeUntilReset..". Please report on Github!")
-        return
+        if timeUntilReset < 0 then
+            -- The server countdown went past zero. Mathematically wrap it to the next 24-hour cycle.
+            timeUntilReset = 86400 + timeUntilReset
+        else
+            -- If exactly 0, the server hasn't sent the reset data yet. Reschedule the check.
+            QuestieCompat.C_Timer.After(3, QuestieCompat.CalculateNextResetTime)
+            return
+        end
     end
+
     Questie.db.profile.dailyResetTime = Questie.db.profile.dailyResetTime or (currentTime + timeUntilReset)
     Questie:Debug(Questie.DEBUG_DEVELOP, "[CalculateNextResetTime] Next daily rest time: ", date("%m/%d/%y %H:%M:%S", Questie.db.profile.dailyResetTime))
 
