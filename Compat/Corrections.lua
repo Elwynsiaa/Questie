@@ -149,6 +149,13 @@ QuestieCompat.RegisterCorrection("npcData", function()
             [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
         },
 
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 31086
+        -- Associated Quest: Slay them all!
+        [31086] = { 
+            [npcKeys.name] = "Quest - Wintergrasp - PvP Kill - Alliance", 
+            [npcKeys.spawns] = {[4197] = {{-1, -1}}}, 
+        },
+
         -- Questie: [CRITICAL] Spawn data missing for NPC: 24804
         -- Associated Quest: The Way to His Heart...
         [24804] = {
