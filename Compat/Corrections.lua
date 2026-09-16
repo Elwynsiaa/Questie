@@ -162,6 +162,25 @@ QuestieCompat.RegisterCorrection("npcData", function()
             [npcKeys.name] = "Attracted Reef Bull",
             [npcKeys.spawns] = {[495] = {{-1, -1}}}, -- Instanced fallback in Howling Fjord (495)
         },
+
+        -- Questie: [CRITICAL] Spawn data missing for NPC: 20021
+        -- Associated Quest: What Came First, the Drake or the Egg? (10609)
+        [20021] = {
+            [npcKeys.name] = "Nether Whelp",
+            [npcKeys.spawns] = {
+                [3522] = { -- Blade's Edge Mountains (Singing Ridge)
+                    {58.4, 74.0}, {58.6, 72.4}, {58.6, 72.6}, {58.6, 74.2}, {58.8, 75.8},
+                    {59.0, 76.8}, {59.6, 79.2}, {59.8, 72.4}, {59.8, 72.6}, {60.2, 76.0},
+                    {60.2, 77.8}, {60.6, 73.8}, {60.6, 78.8}, {61.0, 76.4}, {61.2, 75.2},
+                    {61.4, 77.2}, {61.6, 77.2}, {61.6, 79.0}, {62.0, 78.4}, {62.2, 76.2},
+                    {62.8, 75.8}, {63.2, 78.6}, {63.4, 77.2}, {63.4, 78.4}, {63.6, 77.2},
+                    {64.0, 75.6}, {64.2, 75.4}, {64.2, 78.0}, {65.0, 76.6}, {65.0, 78.4},
+                    {65.2, 78.6}, {65.4, 75.4}, {65.4, 76.0}, {65.6, 76.8}, {66.0, 78.0},
+                    {66.4, 74.8}, {66.8, 75.6}, {67.2, 75.4}, {68.4, 76.8},
+                },
+            },
+            [npcKeys.zoneID] = 3522,
+        },
 	}
 end)
 
