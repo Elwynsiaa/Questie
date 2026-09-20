@@ -45,6 +45,30 @@ QuestieCompat.RegisterCorrection("questData", function()
             [questKeys.requiredLevel] = 1,
             [questKeys.questLevel] = 80,
         },
+        -- Brewfest Quests (Alliance - Goldark Snipehunter: 23486)
+        [11117] = { -- Catch the Wild Wolpertinger!
+            [questKeys.name] = "Catch the Wild Wolpertinger!",
+            [questKeys.startedBy] = {{23486}},
+            [questKeys.finishedBy] = {{23486}},
+        },
+        [11118] = { -- Pink Elekks On Parade
+            [questKeys.name] = "Pink Elekks On Parade",
+            [questKeys.startedBy] = {{23486}},
+            [questKeys.finishedBy] = {{23486}},
+        },
+
+        -- Brewfest Quests (Horde - Glodrak Huntsniper: 24495)
+        [11431] = { -- Catch the Wild Wolpertinger!
+            [questKeys.name] = "Catch the Wild Wolpertinger!",
+            [questKeys.startedBy] = {{24495}},
+            [questKeys.finishedBy] = {{24495}},
+        },
+        [11120] = { -- Pink Elekks On Parade
+            [questKeys.name] = "Pink Elekks On Parade",
+            [questKeys.startedBy] = {{24495}},
+            [questKeys.finishedBy] = {{24495}},
+        },
+        
         --[[
         [12435] = {
             [questKeys.name] = "Report to Lord Afrasastrasz",
@@ -180,6 +204,16 @@ QuestieCompat.RegisterCorrection("npcData", function()
                 },
             },
             [npcKeys.zoneID] = 3522,
+        },
+
+        -- Brewfest NPCs
+        [23486] = { -- Goldark Snipehunter (Alliance)
+            [npcKeys.questStarts] = {11117, 11118},
+            [npcKeys.questEnds]   = {11117, 11118},
+        },
+        [24495] = { -- Glodrak Huntsniper (Horde)
+            [npcKeys.questStarts] = {11431, 11120},
+            [npcKeys.questEnds]   = {11431, 11120},
         },
 	}
 end)
