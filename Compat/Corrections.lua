@@ -9,10 +9,12 @@ QuestieCompat.RegisterCorrection("questData", function()
 	return {
         [24872] = { -- Respite for a Tormented Soul (10-man)
             [questKeys.name] = "Respite for a Tormented Soul",
+            [questKeys.startedBy] = {{38589}},  -- Valithria Dreamwalker (healed)
             [questKeys.finishedBy] = {{38017}}, -- Kalecgos
         },
         [24880] = { -- Respite for a Tormented Soul (25-man)
             [questKeys.name] = "Respite for a Tormented Soul",
+            [questKeys.startedBy] = {{38589}},  -- Valithria Dreamwalker (healed)
             [questKeys.finishedBy] = {{38017}}, -- Kalecgos
         },
         [24873] = { -- Alliance/Horde: Residue Rendezvous (10-man)
